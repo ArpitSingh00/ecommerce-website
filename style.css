@@ -1,0 +1,203 @@
+/* Navigation Style*/
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0.5)
+}
+#navbar h1{
+    color: orange;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+}
+#navbar ul li:hover{
+    background: lightseagreen;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.navbar1{
+    background-color: rgb(234, 221, 187);
+}
+
+.logo{
+    height: 90px;
+    width: 100px;
+    display:fixed;
+   
+}
+
+/* ! main section styles */
+
+.main{
+    background:url('https://imageio.forbes.com/specials-images/imageserve/5d95d03767dd830006a295b6/0x0.jpg?format=jpg&width=1200');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:38.5rem;
+    padding:0;
+}
+.main .overlay{
+    background: rgba(0,0,0,0.4);
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* ! name and motto container style*/
+
+.name-n-motto-container{
+    height:15rem;
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.name-n-motto-container i{
+    font-size: 3rem;
+    border: 2px solid lightgreen;
+    padding:2rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,1);
+}
+
+.name-n-motto-container .motto{
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+
+}
+.name-n-motto-container .name{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 6rem;
+    
+}
+
+.name-n-motto-container i:hover {
+    cursor: pointer;
+}
+
+.name-n-motto-container i:hover + .name {
+    text-shadow: 20px 20px 15px darkgray;
+    letter-spacing: 2px;
+}
+
+.cart i{
+    font-size: 2rem;
+}
+
+/* Feature Style */
+.section-p1{
+    padding: 40px 80px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0 ,0.3);
+    border: 1px solid beige;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}    
+
+#feature .fe-box:hover{
+    box-shadow:10px 10px 54px rgba(70,62,221,0.1);
+}    
+
+#feature .fe-box h6{
+    display: inline;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:#fddde4;
+}
+  
+  /* =============== Feautured Products =============== */
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .featured .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding-top: 16px;
+  }
+  .featured .card-img-top:hover {
+    transform: scale(1.07);
+  }
+  .featured button {
+    background-color: yellow;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+  }
+  
+  .featured .price {
+    color: #088178;
+  }
+  
+  .featured .add-to-cart {
+    color: black;
+    font-size: 25px;
+  }
+  
+
+  .slide-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+  }
+  .swiper-navBtn {
+    color: #febd69;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover {
+    color: #f79210;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 35px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content {
+      margin: 0 10px;
+    }
+  }
